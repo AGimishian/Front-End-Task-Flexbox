@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---------------------
+        HEADER
+---------------------*/
+
+.progress {
+    min-height: 5px;
+    background-color: #6D3D99;
+    margin-bottom: 25px;
+}
+
+.header {
+   min-height: 48px;
+   margin-bottom: 16px;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+/*------ LOGO ------*/
+
+
+.logo {
+    min-height: 50px;
+    min-width: 168px;
+    position: relative;
+}
+
+.rectangle {
+    width: 50px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 3px solid #FFC740;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.logo_text {
+    position: absolute;
+    font-size: 24px;
+    font-style: bold;
+    margin: 0;
+    top: 12px;
+    left: 25px;
+    background-color: white;
+}
+
+/*------ SEARCH ------*/
+
+.search {
+
+    min-width: 200px;
+    margin-top: 10px;
+}
+
+form.search_bar input[type="text"] {
+    float: left;
+    width: 158px;
+    font-size: 14px;
+    padding: 7px 11px;
+    border: 1px solid #6D3D99;
+    border-right: none;
+}
+
+form.search_bar button {
+    float: left;
+    width: 42px;
+    font-size: 14px;
+    padding: 7px 11px;
+    color: white;
+    background-color: #9B51E0;
+    border: 1px solid #6D3D99;
+    border-left: none;
+}
+
+form.search_bar button:hover {
+    background-color: #6D3D99;
+    cursor: pointer;
+}
+
+
+/*---------------------
+        MENU
+---------------------*/
+
+nav {
+    margin-bottom: 17px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.menu li.item {
+
+}
+
+ul.menu li.item a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 123px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+ul.menu li.item:last-of-type a {
+    width: 99px;
+}
+
+ul.menu li.item a.active {
+    color: #FFFFFF;
+    background-color: #FFC740;
+}
+
+ul.menu li.item a:hover {
+    color: #FFFFFF;
+    background-color: #FFC740;
+}
+
+ul.menu li.item a.icon {
+  width: 40px;
+  display: none;
+}
+
+/*---------------------
+        HERO
+---------------------*/
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/Mountains-and-hills-julian-alps.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 35px;
+    min-height: 330px;
+    padding: 10px 20px;
+}
+
+.hero_content {
+  vertical-align: middle;
+}
+
+.hero_text {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    color: #FFC740;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.hero_par {
+    width: 50%;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+
+.hero_content a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background-color: #6D3D99;
+    padding: 8px 24px;
+}
+
+.hero_content a:hover {
+    color: #6D3D99;
+    background-color: white;
+    border: 3px solid #6D3D99;
+}
+
+/*---------------------
+        ARTICLES
+---------------------*/
+
+section.posts {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.line h3 {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 0px;
+    padding-top: 1px;
+    vertical-align: bottom;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
+}
+
+.line {
+    height: 16px;
+    margin-bottom: 16px;
+}
+
+.purple {
+    background-color: #6D3D99;
+}
+
+.yellow {
+    background-color: #FFC740;
+}
+
+
+p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+a {
+    font-size: 12px;
+    color: black;
+}
+
+article.post {
+    width: 50%;
+    padding: 10px;
+
+}
+
+.post img {
+    float: left;
+    margin-right: 20px;
+    width: 142px;
+    height: 141px;
+    border: 2px solid #FFC740;
+    padding: 2px;
+}
+
+
+/*---------------------
+        SERVICES
+---------------------*/
+
+.services {
+  width: 33.3%;
+  padding: 10px;
+}
+
+
+
+
+
+/*---------------------
+        RESENT NEWS
+---------------------*/
+
+.resent_article img {
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey;
+}
+
+.resent_article p {
+
+}
+
+/*---------------------
+        CLIENTS
+---------------------*/
+
+.clients_list {
+    padding: 15px;
+}
+
+.clients ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.clients ul li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*---------------------
+        FOOTER
+---------------------*/
+footer {
+    min-height: 115px;
+    background: #6D3D99;
+}
+.footer_text {
+  display: flex;
+  justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 49px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+/*------ HEADER ------*/
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*------ MENU ------*/
+  ul.menu li.item:not(:first-child) {
+    display: none;
+  }
+
+  nav ul.menu li.item a.icon {
+    display:block;
+  }
+
+
+
+/*------ HERO ------*/
+
+  .hero {
+
+  }
+
+  .hero_content {
+    padding: 20px;
+  }
+
+  .hero_text {
+      font-size: 32px;
+      text-align: center;
+  }
+
+  .hero_par {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+  }
+
+  .hero_content a {
+      display: block;
+      width: 90px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 12px;
+      padding: 8px;
+      text-align: center;
+  }
+
+
+/*------ POSTS ------*/
+
+section.posts {
+  flex-direction: column;
+}
+
+article.post {
+  width: 100%
+}
+
+/*------ SERVICES ------*/
+
+section.services {
+  width: 100%
+}
+
+/*------ CLIENTS ------*/
+
+
+
+/*------ FOOTER ------*/
+
+
+
+}
